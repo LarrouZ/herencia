@@ -8,7 +8,7 @@ public class Main {
         cliente.credito = 5000;
 
         System.out.println("Soy " + cliente.nombre + ", tengo " + cliente.edad + " años y mi telefono es " + cliente.telefono
-                + " y mi credito disponible es " + cliente.credito + "€");
+                + " y mi credito disponible es " + cliente.credito + "Euros");
 
 
         Trabajador trabajador = new Trabajador();
@@ -19,7 +19,7 @@ public class Main {
         trabajador.salario = 500000;
 
         System.out.println("Soy " + trabajador.nombre + ", tengo " + trabajador.edad + " años y mi telefono es " + trabajador.telefono
-                + " y mi salario es de " + trabajador.salario + "€");
+                + " y mi salario es de " + trabajador.salario + "Euros");
     }
 }
 class Persona {
@@ -33,7 +33,7 @@ class Cliente extends Persona {
 }
 
 class Trabajador extends Persona {
-    double salario;
+    int salario;
 }
 
 
