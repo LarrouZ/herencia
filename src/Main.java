@@ -7,10 +7,8 @@ public class Main {
         cliente.telefono = 891345678;
         cliente.credito = 5000;
 
-        System.out.println(cliente.nombre);
-        System.out.println(cliente.edad);
-        System.out.println(cliente.telefono);
-        System.out.println(cliente.credito);
+        System.out.println("Soy " + cliente.nombre + ", tengo " + cliente.edad + " años y mi telefono es " + cliente.telefono
+                + " y mi credito disponible es " + cliente.credito + "€");
 
 
         Trabajador trabajador = new Trabajador();
@@ -20,13 +18,10 @@ public class Main {
         trabajador.telefono = 893324452;
         trabajador.salario = 500000;
 
-        System.out.println(trabajador.nombre);
-        System.out.println(trabajador.edad);
-        System.out.println(trabajador.telefono);
-        System.out.println(trabajador.salario);
+        System.out.println("Soy " + trabajador.nombre + ", tengo " + trabajador.edad + " años y mi telefono es " + trabajador.telefono
+                + " y mi salario es de " + trabajador.salario + "€");
     }
 }
-
 class Persona {
     int edad;
     String nombre;
@@ -34,19 +29,11 @@ class Persona {
 }
 
 class Cliente extends Persona {
-    int credito;
-
-    public Cliente() {
-        System.out.println("estoy  en el constructor de Cliente");
-    }
+    double credito;
 }
 
 class Trabajador extends Persona {
-    int salario;
-
-    public Trabajador() {
-        System.out.println("estoy en el constructor de la clase Trabajador");
-    }
+    double salario;
 }
 
 
